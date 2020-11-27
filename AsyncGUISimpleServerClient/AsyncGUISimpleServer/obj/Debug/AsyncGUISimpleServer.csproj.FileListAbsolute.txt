@@ -28,3 +28,13 @@ C:\Users\thswl\Downloads\AsyncGUISimpleServerClient (11_16_2교시)\AsyncGUISimp
 C:\Users\thswl\Downloads\AsyncGUISimpleServerClient (11_16_2교시)\AsyncGUISimpleServerClient\AsyncGUISimpleServer\obj\Debug\AsyncGUISimpleServer.csproj.CoreCompileInputs.cache
 C:\Users\thswl\Downloads\AsyncGUISimpleServerClient (11_16_2교시)\AsyncGUISimpleServerClient\AsyncGUISimpleServer\obj\Debug\AsyncGUISimpleServer.exe
 C:\Users\thswl\Downloads\AsyncGUISimpleServerClient (11_16_2교시)\AsyncGUISimpleServerClient\AsyncGUISimpleServer\obj\Debug\AsyncGUISimpleServer.pdb
+C:\workspace\NP_lecture\AsyncGUISimpleServerClient\AsyncGUISimpleServer\bin\Debug\AsyncGUISimpleServer.exe.config
+C:\workspace\NP_lecture\AsyncGUISimpleServerClient\AsyncGUISimpleServer\bin\Debug\AsyncGUISimpleServer.exe
+C:\workspace\NP_lecture\AsyncGUISimpleServerClient\AsyncGUISimpleServer\bin\Debug\AsyncGUISimpleServer.pdb
+C:\workspace\NP_lecture\AsyncGUISimpleServerClient\AsyncGUISimpleServer\obj\Debug\AsyncGUISimpleServer.csprojAssemblyReference.cache
+C:\workspace\NP_lecture\AsyncGUISimpleServerClient\AsyncGUISimpleServer\obj\Debug\AsyncGUISimpleServer.ChatForm.resources
+C:\workspace\NP_lecture\AsyncGUISimpleServerClient\AsyncGUISimpleServer\obj\Debug\AsyncGUISimpleServer.Properties.Resources.resources
+C:\workspace\NP_lecture\AsyncGUISimpleServerClient\AsyncGUISimpleServer\obj\Debug\AsyncGUISimpleServer.csproj.GenerateResource.cache
+C:\workspace\NP_lecture\AsyncGUISimpleServerClient\AsyncGUISimpleServer\obj\Debug\AsyncGUISimpleServer.csproj.CoreCompileInputs.cache
+C:\workspace\NP_lecture\AsyncGUISimpleServerClient\AsyncGUISimpleServer\obj\Debug\AsyncGUISimpleServer.exe
+C:\workspace\NP_lecture\AsyncGUISimpleServerClient\AsyncGUISimpleServer\obj\Debug\AsyncGUISimpleServer.pdb

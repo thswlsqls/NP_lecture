@@ -24,7 +24,7 @@ namespace AsyncGUISimpleServer
         delegate void AddItemDelegate(Control ctrl, string s);
         AddItemDelegate _ItemAdder;
 
-        delegate void RemoveItemDelegate(Control ctrl, int i);
+        delegate void RemoveItemDelegate(Control ctrl, object o);
         RemoveItemDelegate _ItemRemover;
 
         Dictionary<string, Socket> connectedClients;
@@ -63,12 +63,12 @@ namespace AsyncGUISimpleServer
             }
         }
 
-        void RemoveItem(Control ctrl, int i)
+        void RemoveItem(Control ctrl, object o)
         {
-            if (ctrl.InvokeRequired) ctrl.Invoke(_ItemRemover, ctrl, i);
+            if (ctrl.InvokeRequired) ctrl.Invoke(_ItemRemover, ctrl, o);
             else
             {
-                ConListBox.Items.RemoveAt(i);
+                ConListBox.Items.Remove(o);
             }
         }
 
@@ -148,6 +148,7 @@ namespace AsyncGUISimpleServer
                 idList += string.Format("{0}:", fromID); //연결을 요청한 클라이언트의 아이디를 ":"구분자를 사용하여 문자열에 붙인다.
                 //}
                 Console.WriteLine("접속자 목록:" + idList);
+                string[] ConListToken = idList.Split(':');
 
                 //byte[] bDts2 = Encoding.UTF8.GetBytes("ConList:" + idList);
                 //AppendText(txtHistory, idList);
@@ -186,6 +187,14 @@ namespace AsyncGUISimpleServer
                 byte[] bDts = Encoding.UTF8.GetBytes("ConListSEND:" + idList);
                 obj.workingSocket.Send(bDts);
                 //sendAll(obj.workingSocket, bDts);
+            }
+            else if (cmd.Equals("CLOSE"))
+            {
+                fromID = token[1].Trim();
+                RemoveItem(ConListBox, fromID);
+                connectedClients.Remove(fromID);
+                //byte[] bDts = Encoding.UTF8.GetBytes("연결을 종료했습니다." );
+                //obj.workingSocket.Send(bDts);
             }
             else
             {
@@ -265,3 +274,5 @@ namespace AsyncGUISimpleServer
         }
     }
 }
+
+

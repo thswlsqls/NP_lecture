@@ -18,17 +18,18 @@ namespace AsyncSimpleGUIClient
     {
         Socket mainSock;
         IPAddress thisAddress;
-        public static string IdList;
+        //public static string IdList;
+        public static string[] ConListToken;
 
         delegate void AppendTextDelegate(Control ctrl, string s);
         AppendTextDelegate _textAppender;
 
-        delegate void AddItemDelegate(Control ctrl, string s);
-        AddItemDelegate _ItemAdder;
+        //delegate void AddItemDelegate(Control ctrl, string s);
+        //AddItemDelegate _ItemAdder;
 
         string nameID; //ID
         
-        string [] token;
+        //string [] token;
 
         public ChatClient()
         {
@@ -127,7 +128,8 @@ namespace AsyncSimpleGUIClient
             }
             else if (cmd.Equals("ConListSEND"))
             {
-                IdList = text;
+                //IdList = text;
+                ConListToken = text.Split(':'); //
             }
             else
             {
@@ -201,6 +203,15 @@ namespace AsyncSimpleGUIClient
             Form1 newform1 = new Form1();
             //newform1.Passvalue = IdList;
             newform1.Show();
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            string msg = "CLOSE:" + nameID + ":";
+            byte[] data = Encoding.UTF8.GetBytes(msg);
+            mainSock.Send(data);
+            mainSock.Disconnect(true); //이 소켓을 다시 연결할 수 있으며 연결을 종료한다.
 
         }
     }

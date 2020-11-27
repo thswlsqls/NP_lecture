@@ -52,17 +52,17 @@ namespace AsyncSimpleGUIClient
         //    set { this.Form1_value = value; }  // 다른폼(Form1)에서 전달받은 값을 쓰기
         //}
         
-        string[] ConListToken = ChatClient.IdList.Split(':');
+        //string[] ConListToken = ChatClient.IdList.Split(':');
 
         private void Form1_Load(object sender, EventArgs e)
         {
             //string IdList = Passvalue;
             
-            Console.WriteLine("form1:접속자목록:" + ChatClient.IdList);
-            Console.WriteLine(ConListToken[0]);
-            for(int i = 1; i<ConListToken.Length; i++)
+            Console.WriteLine("form1:접속자목록:" + ChatClient.ConListToken);
+            Console.WriteLine(ChatClient.ConListToken[0]);
+            for(int i = 1; i< ChatClient.ConListToken.Length; i++)
             {
-                AddItem(ConListBox, ConListToken[i]);
+                AddItem(ConListBox, ChatClient.ConListToken[i]);
             }
         }
 
@@ -72,6 +72,11 @@ namespace AsyncSimpleGUIClient
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
