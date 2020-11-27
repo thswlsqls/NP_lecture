@@ -1,0 +1,32 @@
+E:\NP\AsyncSimpleGUIClient\bin\Debug\AsyncSimpleGUIClient.exe.config
+E:\NP\AsyncSimpleGUIClient\bin\Debug\AsyncSimpleGUIClient.exe
+E:\NP\AsyncSimpleGUIClient\bin\Debug\AsyncSimpleGUIClient.pdb
+E:\NP\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.csprojAssemblyReference.cache
+E:\NP\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.ChatClient.resources
+E:\NP\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.Properties.Resources.resources
+E:\NP\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.csproj.GenerateResource.cache
+E:\NP\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.csproj.CoreCompileInputs.cache
+E:\NP\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.exe
+E:\NP\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.pdb
+C:\NP\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\bin\Debug\AsyncSimpleGUIClient.exe.config
+C:\NP\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\bin\Debug\AsyncSimpleGUIClient.exe
+C:\NP\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\bin\Debug\AsyncSimpleGUIClient.pdb
+C:\NP\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.csprojAssemblyReference.cache
+C:\NP\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.ChatClient.resources
+C:\NP\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.Properties.Resources.resources
+C:\NP\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.csproj.GenerateResource.cache
+C:\NP\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.csproj.CoreCompileInputs.cache
+C:\NP\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.exe
+C:\NP\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.pdb
+C:\Users\thswl\Downloads\AsyncGUISimpleServerClient (11_16_2교시)\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\bin\Debug\AsyncSimpleGUIClient.exe.config
+C:\Users\thswl\Downloads\AsyncGUISimpleServerClient (11_16_2교시)\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\bin\Debug\AsyncSimpleGUIClient.exe
+C:\Users\thswl\Downloads\AsyncGUISimpleServerClient (11_16_2교시)\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\bin\Debug\AsyncSimpleGUIClient.pdb
+C:\Users\thswl\Downloads\AsyncGUISimpleServerClient (11_16_2교시)\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.csprojAssemblyReference.cache
+C:\Users\thswl\Downloads\AsyncGUISimpleServerClient (11_16_2교시)\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.ChatClient.resources
+C:\Users\thswl\Downloads\AsyncGUISimpleServerClient (11_16_2교시)\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.Properties.Resources.resources
+C:\Users\thswl\Downloads\AsyncGUISimpleServerClient (11_16_2교시)\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.csproj.GenerateResource.cache
+C:\Users\thswl\Downloads\AsyncGUISimpleServerClient (11_16_2교시)\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.csproj.CoreCompileInputs.cache
+C:\Users\thswl\Downloads\AsyncGUISimpleServerClient (11_16_2교시)\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.exe
+C:\Users\thswl\Downloads\AsyncGUISimpleServerClient (11_16_2교시)\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.pdb
+C:\Users\thswl\Downloads\AsyncGUISimpleServerClient (11_16_2교시)\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.Form1.resources
+C:\Users\thswl\Downloads\AsyncGUISimpleServerClient (11_16_2교시)\AsyncGUISimpleServerClient\AsyncSimpleGUIClient\obj\Debug\AsyncSimpleGUIClient.Form2.resources
