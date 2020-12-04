@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.ConListBox = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnChat = new System.Windows.Forms.Button();
+            this.btnBlock = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -41,28 +41,29 @@
             this.ConListBox.ItemHeight = 12;
             this.ConListBox.Location = new System.Drawing.Point(12, 47);
             this.ConListBox.Name = "ConListBox";
+            this.ConListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.ConListBox.Size = new System.Drawing.Size(305, 304);
+            this.ConListBox.Sorted = true;
             this.ConListBox.TabIndex = 0;
-            this.ConListBox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // button1
+            // btnChat
             // 
-            this.button1.Location = new System.Drawing.Point(12, 370);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "채팅하기";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnChat.Location = new System.Drawing.Point(12, 370);
+            this.btnChat.Name = "btnChat";
+            this.btnChat.Size = new System.Drawing.Size(75, 23);
+            this.btnChat.TabIndex = 1;
+            this.btnChat.Text = "채팅하기";
+            this.btnChat.UseVisualStyleBackColor = true;
+            this.btnChat.Click += new System.EventHandler(this.btnChat_Click);
             // 
-            // button3
+            // btnBlock
             // 
-            this.button3.Location = new System.Drawing.Point(242, 370);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "차단하기";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnBlock.Location = new System.Drawing.Point(242, 370);
+            this.btnBlock.Name = "btnBlock";
+            this.btnBlock.Size = new System.Drawing.Size(75, 23);
+            this.btnBlock.TabIndex = 3;
+            this.btnBlock.Text = "차단하기";
+            this.btnBlock.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -89,8 +90,8 @@
             this.ClientSize = new System.Drawing.Size(329, 410);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBlock);
+            this.Controls.Add(this.btnChat);
             this.Controls.Add(this.ConListBox);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -103,8 +104,8 @@
         #endregion
 
         private System.Windows.Forms.ListBox ConListBox;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnChat;
+        private System.Windows.Forms.Button btnBlock;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

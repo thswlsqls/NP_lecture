@@ -143,7 +143,7 @@
             this.btnClose.TabIndex = 13;
             this.btnClose.Text = "연결종료";
             this.btnClose.UseVisualStyleBackColor = true;
-           
+
             // 
             // btnConList
             // 

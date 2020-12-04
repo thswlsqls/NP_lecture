@@ -66,19 +66,22 @@ namespace AsyncSimpleGUIClient
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
+        public static string selectedidList;
 
+        private void btnChat_Click(object sender, EventArgs e)
+        {
+            foreach(string id in ConListBox.SelectedItems)
+            {
+                Console.WriteLine(id);
+                selectedidList = selectedidList + id + ":";
+            }
+            Console.WriteLine(selectedidList);
+            //string test = ConListBox.SelectedItems.ToString();
+            //Console.WriteLine(test);
+            Form2 form2 = new Form2();
+            form2.Show();
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

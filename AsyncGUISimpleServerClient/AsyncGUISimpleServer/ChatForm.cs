@@ -28,6 +28,7 @@ namespace AsyncGUISimpleServer
         RemoveItemDelegate _ItemRemover;
 
         Dictionary<string, Socket> connectedClients;
+        //Dictionary<int, Dictionary<string, Socket>> connectedClients_grp;
         int clientNum;
         string idList="";
 
@@ -74,7 +75,7 @@ namespace AsyncGUISimpleServer
 
         private void OnFormLoaded(object sender, EventArgs e)
         {
-
+            Dictionary<int, Dictionary<string, Socket>> connectedClients_grp;
         }
 
         private void ChatForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -196,6 +197,24 @@ namespace AsyncGUISimpleServer
                 //byte[] bDts = Encoding.UTF8.GetBytes("연결을 종료했습니다." );
                 //obj.workingSocket.Send(bDts);
             }
+            else if(cmd.Equals("GRP"))
+            {
+
+                byte[] bDts = Encoding.UTF8.GetBytes("GRPGEN:" + token[2]);
+                Console.WriteLine(token[3]);
+                Console.WriteLine(token[4]);
+                Console.WriteLine(token[5]);
+                int length = token.Length;
+                Console.WriteLine(length);
+
+                for (int i = 3; i < length-2; i++)
+                {
+                    console.writeline(token[i]);
+
+                    connectedclients.trygetvalue(token[i], out socket socket);
+                    sendto(socket, bdts);
+                }
+            }
             else
             {
                 string msg = token[1];
@@ -241,7 +260,6 @@ namespace AsyncGUISimpleServer
                         }
                         catch { }
                     }
-
                 }
             }
         }
@@ -274,5 +292,7 @@ namespace AsyncGUISimpleServer
         }
     }
 }
+
+
 
 

@@ -21,13 +21,16 @@ namespace AsyncSimpleGUIClient
         //public static string IdList;
         public static string[] ConListToken;
 
+        public static int port;
+        public static string nameID;
+
         delegate void AppendTextDelegate(Control ctrl, string s);
         AppendTextDelegate _textAppender;
 
         //delegate void AddItemDelegate(Control ctrl, string s);
         //AddItemDelegate _ItemAdder;
 
-        string nameID; //ID
+        //string nameID; //ID
         
         //string [] token;
 
@@ -73,16 +76,16 @@ namespace AsyncSimpleGUIClient
             }
             string[] token = tts.Split(':'); //입력값을 ':'구분자를 기준으로 구분하여 배열에 저장한다.
 
-            if (token[0].Equals("BR"))
+            if (token[0].Equals("TO"))
             {
                 byte[] bDts = Encoding.UTF8.GetBytes
-                    ("BR:" + nameID + ":" + token[1]+":");
+                    ("TO:" + nameID + ":" + token[1]+":" + token[2]);
                 mainSock.Send(bDts);
             }
             else
             {
                 byte[] bDts = Encoding.UTF8.GetBytes
-                 ("TO:" + nameID + ":" + token[0] + ":"+token[1] + ":");
+                 ("BR:" + nameID + ":" + token[0] + ":");
                 mainSock.Send(bDts);
             }
         }
@@ -136,7 +139,6 @@ namespace AsyncSimpleGUIClient
                 AppendText(txtHistory, text);
             }
 
-
             obj.ClearBuffer();
             obj.WorkingSocket.BeginReceive(obj.Buffer, 0, obj.BufferSize, 0, DataReceived, obj);
 
@@ -149,7 +151,7 @@ namespace AsyncSimpleGUIClient
                 //MsgBoxHelper.Error("이미 연결되어 있습니다!");
                 return;
             }
-            int port;
+            //int port;
             if (!int.TryParse(txtPort.Text, out port))
             {
                 txtPort.Focus();
@@ -208,11 +210,12 @@ namespace AsyncSimpleGUIClient
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            string msg = "CLOSE:" + nameID + ":";
+            AppendText(txtHistory, "연결 종료");
+            string msg = "CLOSE:"; //+ nameID + ":";
             byte[] data = Encoding.UTF8.GetBytes(msg);
             mainSock.Send(data);
-            mainSock.Disconnect(true); //이 소켓을 다시 연결할 수 있으며 연결을 종료한다.
-
+            //mainSock.Disconnect(true); //이 소켓을 다시 연결할 수 있으며 연결을 종료한다.
+            
         }
     }
 }
