@@ -134,6 +134,19 @@ namespace AsyncSimpleGUIClient
                 //IdList = text;
                 ConListToken = text.Split(':'); //
             }
+            else if (cmd.Equals("GRPGEN"))
+            {
+                DialogResult result = MessageBox.Show("채팅에 초대되었습니다.", "", MessageBoxButtons.YesNo);
+                if(result == DialogResult.Yes)
+                {
+                    Form2 form2 = new Form2();
+                    form2.Show();
+                }
+                else
+                {
+
+                }
+            }
             else
             {
                 AppendText(txtHistory, text);

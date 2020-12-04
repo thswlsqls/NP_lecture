@@ -201,18 +201,15 @@ namespace AsyncGUISimpleServer
             {
 
                 byte[] bDts = Encoding.UTF8.GetBytes("GRPGEN:" + token[2]);
-                Console.WriteLine(token[3]);
-                Console.WriteLine(token[4]);
-                Console.WriteLine(token[5]);
-                int length = token.Length;
+                int length = token.Length - 2;
                 Console.WriteLine(length);
 
-                for (int i = 3; i < length-2; i++)
+                for (int i = 3; i <= length; ++i)
                 {
-                    console.writeline(token[i]);
+                    Console.WriteLine(token[i]);
 
-                    connectedclients.trygetvalue(token[i], out socket socket);
-                    sendto(socket, bdts);
+                    connectedClients.TryGetValue(token[i], out Socket socket);
+                    sendTo(socket, bDts);
                 }
             }
             else
